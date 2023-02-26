@@ -18,7 +18,7 @@
 자동완성기능을 위해서 쓰는 autocomplete , 기본 값은 'on'
 자동완성기능을 끄기 위해서 속성을 'off'로 지정해 끄면 된다.
 
-### <lable>태그 - 폼 요소에 레이블 붙이기 
+### lable 태그 - 폼 요소에 레이블 붙이기 
 lable 태그는 폼 요소 옆에 아이디나 비밀번호 처럼 <b>'텍스트'</b>를 붙이는 것이다.
 표현하는 방법은 두가지
 * <lable>아이디(6자 이상)<input type="text"....></lable> 
@@ -28,6 +28,6 @@ lable 태그안에 폼 요소를 넣는 방법
 <lable>요소와 폼 요소를 분리 <lable>태그안에서는 for 폼 요소에서는 id를 이용해 서로 연결 
 input="checkbox",input="radio" lable 태그를 쓰면 텍스트 부분만 눌러도 체크가 가능해짐
 
-### <fieldset>,<legend>태그 - 폼 요소 그룹으로 묶기
+### fieldset,legend태그 - 폼 요소 그룹으로 묶기
 <fieldset> 태그는 태그사이의 폼들을 하나의 영역으로 묶고 외각선을 그려준다.
 <legend> 태그는 그 외각선의 제목으로 붙여준다.  
