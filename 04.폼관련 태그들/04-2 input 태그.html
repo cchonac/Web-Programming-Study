@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> input 태그들 </title>
+
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <label>아이디: <input type="text" id="user-id"size="10"></label>
+                <label>비밀번호: <input type="password" id="user-pw" size="10"> </label>
+                <input type="submit" value="로그인">
+            </fieldset>
+
+            <input type="search">
+            <input type="submit" value="로그인">
+
+        
+        </form>
+
+
+        <form>
+            <fieldset> 
+                <legend>개인정보</legend>
+                <ul>
+                    <li>
+                        <label for="user-name">이름</label>
+                        <input type="text" id="user-name">
+                    </li>
+                    <li>
+                        <label for="mail">메일주소</label>
+                        <input type="email" id="mail">
+                    </li>
+                    <li>
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone">
+                    </li>
+                    <li>
+                        <lable for="blog">블로그/홈페이지</lable>
+                        <input type="url" id="blog">
+                    </li>
+
+                </ul>
+        
+            </fieldset>
+            <input type="submit" value="가입하기">
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>등록정보</legend>
+                <ul>
+                    <li>
+                        <label class="reg" for="member">참여인원<small>(최대10명)</small></label>
+                        <input type="number" id="member"value="1" min="0" max="10"step="1">
+                    </li>
+                    <li>
+                        <label class="reg" for="product">지원물품<small>(1인당 5개)</small></label>
+                        <input type="number" id="product" value="1" min="0" max="5" step="1">
+                    </li>
+                    <li>
+                        <label class="reg" for="satis">희망단계<small>(하,중,상)</small></label>
+                        <input type="range" id="satis" value="1" min="1" max="3">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <hr>
+        <form>
+            <fieldset>
+                <legend>신청과목</legend>
+                <p>이 달에 신청할 과목을 선택하세요(1과목만 가능)</p>
+                <label><input type="radio" name="subject" value="speaking">회화</label>
+                <label><input type="radio" name="subject" value="grammar">문법</label>
+                <label><input type="radio" name="subject" value="writing">작문</label>
+            </fieldset>
+            <fieldset>
+                <legend>메일로 받고 싶은 뉴스 주제를 선택해주세요(복수 선택 가능)</legend>
+                <label><input type="checkbox" name="mailing1" value="news">해외 단신</label>
+                <label><input type="checkbox" name="mailing2" value="dialog">5분 회화</label>
+                <lable><input type="checkbox" name="mailing3" value="pops">모닝팝스</lable>
+            </fieldset>
+        </form>
+        <p>올해 과잠 색깔을 받으려고 합니다. 원하시는 색상을 추천해주세요.</p>
+        <label>선호색상<input type="color"></label>
+        <br>
+        <label><input type="date" id="start"></label>
+        <label><input type="date" id="end"></label>
+
+        <h3>원하는 대관시간을 선택하세요(오늘)</h3>
+        <label>시작시간<input type="time" value="09:00" id="start1"></label>
+        <label>종료시간<input type="time" value="18:00" id="end1"></label>
+
+        <h3>대관시간을 선택하세요(다른날짜)</h3>
+        <label>시작시간<input type="datetime-local" value="2023-03-02T09:00" id="start2"></label>
+        <lanel>종료시간<input type="datetime-local" value="2023-03-02T18:00" id="end2"></lanel>
+
+        <form action="register.php" method="post">
+            <label>메일주소<input type="text"></label>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시입력">
+
+        </form>
+        <br>
+        <input type="button" value="새 탭 열기" onclick="window.open()">
+        
+
+
+
+    </body>
+</html>
+

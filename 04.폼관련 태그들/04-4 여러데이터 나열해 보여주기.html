@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>여름방학 특강신청</h1>
+    <label class="reg" for="class">학과</label>
+    <select size="5" id="class" multiple>
+        <optgroup label="공과대학">
+        <option value="archi">건축공학과</option>
+        <option value="mechanic">기계공학과</option>
+        <option value="indust">산업공학과</option>
+        <option value="elec">전기공학과</option>
+        <option value="computer">컴퓨터공학과</option>
+        <option value="chemical">화학공학과</option>
+        </optgroup>
+        <optgroup label="인문대학">
+            <option value="history">사학과</option>
+            <option value="lang">어문학부</option>
+            <option value="philo">철학과</option>
+
+        </optgroup>
+        
+    </select>
+    
+    <h2>수강 과목을 선택하세요</h2>
+    <input type="text" id="interest" list="choices">
+    <datalist id="choices">
+        <option value="grammar" label="문법"></option>
+        <option value="voca" label="어휘"></option>
+        <option value="speaking" label="회화"></option>
+    </datalist>
+</body>
